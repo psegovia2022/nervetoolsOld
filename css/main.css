@@ -1,0 +1,130 @@
+/*****************************************************************
+***********************************************************
+     2. GLOBAL STYLES FOR ALL PAGES
+***********************************************************
+**********************************************************************/
+
+html, body {
+    width: 100%;
+    height: 100%;
+  }
+  body {
+    font-family: 'Raleway', sans-serif;
+    max-width: 1400px;
+    margin: auto;
+    min-height: 100vh;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2.5em;;
+  }
+  
+  /********************************************************
+***********************************************************
+     3. HEADER, H1, H2, NAV
+***********************************************************
+**************************************************************/
+
+  header {
+    padding:  2.5em ;
+    margin: 2.5em;
+    color: #fff;
+  }
+
+  .logo {
+      width: 100%;
+  }
+  
+  article.description {
+        background-color: #ada9aa;
+        padding: 2em;
+    
+  }
+  .description p {
+      line-height: 1.4em;
+      font-size: 1.2em;
+    
+  } 
+
+  .description h1, .catalogo h1 {
+    font: 1.8em 'Roboto Condensed', sans-serif;
+    margin: .5em .5em .5em 0;
+    }
+
+    div.catalogo {
+        padding: 2em;
+    }
+
+.plasticParts, .PCBs, .screws {
+    border: solid 2px rgb(170, 163, 163);
+    border-radius: 5px;
+    padding: 2em;
+    margin: 1em;
+}
+
+.plasticParts h2, .PCBs h2, .screws h2 {
+    font: 2em 'Roboto Condensed', sans-serif;
+    margin: .5em .5em .5em 0;
+    font-weight: bold;
+    font-variant: small-caps;
+    }
+
+.plasticParts h3, .PCBs h3, .screws h3 {
+    font: 1.5em 'Roboto Condensed', sans-serif;
+    margin: 1em .5em .5em 0;
+    }
+
+
+.plasticParts h4, .PCBs h4, .screws h4 {
+    font: 1.2em 'Roboto Condensed', sans-serif;
+    margin: 2em .5em .5em 0;
+    }
+  
+
+
+div.container {
+    margin-top: 1em;
+    line-height: 1.4em;
+}
+
+div.containerBig {
+    padding-bottom: 1em;
+    border-bottom: solid 1px rgb(185, 179, 179);
+}
+
+img {
+    display: block;     
+}
+
+
+div.address {
+    line-height: 1.5em;
+    margin: 1em;
+    padding: 1em;
+}
+/* Media queries for big screen */
+
+@media only screen and (min-width: 900px) { 
+    .logo {
+        display: flex;
+        justify-content: center;
+        /* width: 50%; */
+    }
+
+    .containerBig, .containerSmall, .containerPcb, .containerScrew, .containerEIB, .containerFixture {
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows: 1fr*6;
+        gap: 2em;
+    }
+
+   .plasticParts p {
+    font-size: 1.2em;
+    line-height: 1.3em;
+   }
+    
+  
+
+}
